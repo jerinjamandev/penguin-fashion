@@ -8,27 +8,60 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="mx-auto w-[95%]">
     <header>
-        <nav class="flex iteme">
+        <nav class="flex items-center justify-around mt-6">
             <div>
-                <img src="./icons/logo.png" alt="">
+                <img class="lg:w-[235px] w-[148px]" src="./icons/logo.png" alt="">
             </div>
 
             <div>
-                <ul class="flex">
-                    <li>home</li>
+                <ul class="lg:flex gap-8 font-semibold lg:flex-row md:flex-row hidden">
+                    <li>Home</li>
                     <li>Product</li>
                     <li>About us</li>
                     <li>Contact us</li>
                 </ul>
+
+                <div class="lg:hidden md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                    </svg>
+
+                </div>
             </div>
         </nav>
-
-
     </header>
 
     <main>
+        <section class="mt-[100px]">
+            <div class="flex justify-around items-center">
+                <div class="">
+                    <h1 class="text-5xl uppercase font-semibold"><span class="text-[#FABE4C]">Be the
+                            Penguins</span>
+                        <br>
+                        of Winter
+                    </h1>
+
+                    <p class="mt-[20px]">Lorem Ipsum is simply dummy text of the printing <br>
+                        and typesetting industry.</p>
+
+                    <button
+                        class="flex mt-4 bg-[#98B134] py-3 px-3 rounded font-semibold text-xs items-center gap-2 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+
+                        BUY NOW</button>
+                </div>
+                <div><img src="./images/model.png" alt=""></div>
+            </div>
+        </section>
+
 
     </main>
 
